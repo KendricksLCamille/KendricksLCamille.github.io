@@ -1,2 +1,2 @@
-# kendricks.github.io
+# KendricksLCamille.github.io
 Kendricks Github Site
