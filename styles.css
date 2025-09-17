@@ -1,0 +1,21 @@
+.color-scroll {
+    font-size: inherit;
+    font-weight: bold;
+    color: #fff; /* This will be overridden by background-clip */
+    background: linear-gradient(270deg,
+        var(--bs-primary), var(--bs-secondary), var(--bs-primary)
+    );
+    background-size: 1400% 1400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move-background 2s ease-in-out infinite;
+}
+
+@keyframes move-background {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
