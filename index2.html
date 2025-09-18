@@ -45,7 +45,7 @@
     <main class="container">
         <section class="row" id="aboutme">
             <h2>About Me</h2>
-            <div class="row" id="aboutme_summary">
+            <section class="row" id="aboutme_summary">
                 <h3>Summary</h3>
                 <p>I am an enthusiastic problem-solver with a strong grasp of the entire software development life
                     cycle, having worked as a project manager, lead developer, and assistant developer across both
@@ -62,8 +62,8 @@
                     challenge myself to learn new skills and adapt quickly to emerging paradigms, and I am eager to
                     leverage my expertise to contribute to a dynamic team.
                 </p>
-            </div>
-            <div class="row" id="aboutme_leadership">
+            </section>
+            <section class="row" id="aboutme_leadership">
                 <h3>Leadership Approach</h3>
                 <p>As a team leader, I adopt a hands-off approach focused on empowering my team to grow and succeed. My
                     leadership style involves breaking down overall projects into manageable subtasks and delegating
@@ -75,7 +75,24 @@
                     structured delegation model allows me to prioritize both task completion and the professional
                     development of each team member, ultimately creating a strong and versatile team ready to tackle any
                     challenge.</p>
-            </div>
+            </section>
+        </section>
+        <section class="row" id="tech">
+            <h2 class="mb-3">Technologies</h2>
+            <div id="tech-filter" class="col-12"></div>
+        </section>
+        <section class="row" id="work_experience">
+            <h2>Work Experience</h2>
+            <section>
+                java
+                <section>
+                    c#
+                </section>
+            </section>
+            <section>python
+                <section>molly</section>
+            </section>
+
         </section>
     </main>
 </div>
@@ -86,9 +103,19 @@
     </p>
     <p>Powered by bootstrap 5.3</p>
 </footer>
+<!-- Scripts -->
+<script src="index.js"></script>
 </body>
 <!--suppress JSUnresolvedLibraryURL -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        if (typeof fill_with_images === 'function'){
+            const el = document.getElementById('tech-filter');
+            if (el) fill_with_images(el);
+        }
+    });
+</script>
 </html>
